@@ -30,6 +30,6 @@ jobs:
         run: |
           sudo apt update
           sudo apt install wget ffmpeg -y
-          wget -o 1.m4a http://yt.checker.in/utubebot/_%E5%94%B1%E6%AD%8C%E5%82%BE%E8%A8%88_11%E6%9C%88%E3%81%AE%E7%9B%B4%E6%92%AD.m4a
+          wget http://yt.checker.in/utubebot/_%E5%94%B1%E6%AD%8C%E5%82%BE%E8%A8%88_11%E6%9C%88%E3%81%AE%E7%9B%B4%E6%92%AD.m4a
           ls -al
-          ffmpeg -re -loop 1 -i 1.png -i 1.m4a -r 1 -preset ultrafast -c:a copy -f flv rtmp://a.rtmp.youtube.com/live2/d01v-aj6k-p238-ff2x-2ymk
+          ffmpeg -re -loop 1 -i 1.png -i _唱歌傾計_11月の直播.m4a -r 1 -preset ultrafast -c:a copy -f flv rtmp://a.rtmp.youtube.com/live2/d01v-aj6k-p238-ff2x-2ymk
